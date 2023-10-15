@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SWIPE BUTTON
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row class="ion-margin">
+    <ion-col [style.background-color]="'var(--ion-color-' + color + ')'">
+      <div align="center">
+        <ion-text color="light">{{text}}</ion-text>
+      </div>
+      <ion-fab-button #swipeButton color="light">
+        <ion-icon class="left" name="chevron-forward-outline"></ion-icon>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        <ion-icon class="right" name="chevron-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+  </ion-row>
+ 
+</ion-content>
